@@ -6,6 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Promax.Api.To.NetCore.Api.Filters;
+using Promax.NetCore.Application.DependencyInjection;
+using Promax.NetCore.Infra.Repositories.DependencyInjection;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Diagnostics.CodeAnalysis;
 
@@ -40,6 +42,8 @@ namespace Promax.Api.To.NetCore.Api
                 });
             });
 
+            services.AddSqlServerPersistence();
+            services.AddPromaxApplicationServices();
             services.AddHealthChecks();
         }
 

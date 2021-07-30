@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Promax.NetCore.Domain.Entities\Promax.NetCore.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Promax.NetCore.Domain.Repositories\Promax.NetCore.Domain.Repositories.csproj" />
+    <ProjectReference Include="..\Promax.NetCore.Infra.Database\Promax.NetCore.Infra.Database.csproj" />
+  </ItemGroup>
+
 </Project>

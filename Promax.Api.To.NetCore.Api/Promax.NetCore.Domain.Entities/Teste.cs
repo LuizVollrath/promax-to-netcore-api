@@ -6,6 +6,6 @@ namespace Promax.NetCore.Domain.Entities
     {
         public string Nome { get; set; }
         public bool Ativo { get; set; }
-        public int ModeloNegocioId { get; set; }
+        public int Valor { get; set; }
     }
 }
